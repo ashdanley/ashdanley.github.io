@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css"> 
+  <head>
+    <!--
+      Ashley Danley
+      Project 1 Revision: Survey Form
+      June 24, 2023
+    -->
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="form">
+      <div id="contain">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Favorite Animals</p>
+        <form id="survey-form">
+          <fieldset>
+            <label id="name-label">Name</label> 
+              <input name="name" id="name" type="text" placeholder="Enter Your Name" required />
+            <label id="email-label">Email</label> 
+              <input name="email" id="email" type="email" placeholder="Enter Your Email" required />
+            <label id="number-label">Age (optional):</label>
+              <input id="number" type="number" name="age" min="13" max="120" placeholder="Age" />
+          </fieldset>
+          <fieldset>Out of the options provided, which animal is your favorite?
+            <select id="dropdown">
+              <option value="0">Select One</option>
+              <option value="1">Dog</option>
+              <option value="2">Cat</option>
+              <option value="3">Turtle</option>
+              <option value="4">Fish</option>
+              <option value="5">Rodent</option>
+            </select>
+          <fieldset>Do you have your favorite animal as a pet?
+            <label for="yes"></label>
+              <input id="yes" type="checkbox" required name="survey-checkbox" class="inline" value="50" /> Yes
+            <label for="no"></label>
+              <input id="no" type="checkbox" required name="survey-checkbox" class="inline" value="51" /> No
+            <label for="not"></label>
+              <input id="not" type="checkbox" required name="survey-checkbox" class="inline" value="52" /> Not yet, but I will eventually
+          </fieldset>
+          <fieldset>Did this survey list your favorite animal?
+            <label for="yes"></label>
+              <input id="yes" type="radio" value="1" name="select-one" class="inline" /> Yes
+            <label for="no"></label>
+              <input id="no" type="radio" value="2" name="select-one" class="inline" /> No
+           </fieldset>
+            <label for="questions">If not, what is your favorite animal?</label>
+              <textarea id="questions" name="questions" rows="3" cols="30" placeholder="My favorite animal is..."></textarea>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
